@@ -1,0 +1,143 @@
+<template>
+  <div>
+    <my-navbar></my-navbar>
+    <router-view></router-view>
+    <my-footer></my-footer>
+  </div>
+
+</template>
+<script>
+  import MyNavbar from './components/common/MyNavbar'
+  import MyFooter from './components/common/MyFooter'
+  export default {
+    name: 'App',
+
+    components: {
+      'my-navbar' : MyNavbar,
+      'my-footer' : MyFooter
+    }
+
+  }
+</script>
+
+<style scoped>
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+</style>
+
+
+<style>
+  .bg_summary{
+    height: 450px;
+    width: 100%;
+    background-image: url("../src/assets/images/summary.jpg");
+    background-size: 100% 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .phase_1{
+    height: 450px;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  .phase_2{
+    height: 450px;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    padding-top: 150px;
+    color: white;
+  }
+
+
+  .developer_img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #00cc00;
+  }
+
+
+  .footer_phase{
+    padding:10px 0px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+
+  #year{
+    color: orangered;
+    font-family: Georgia;
+  }
+
+  .icon_control{
+    height: 30px;
+    width: 30px;
+  }
+
+  .contact_section{
+    height: auto;
+    width: 100%;
+    background-image: url("../src/assets/images/contacto.jpg");
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 15px;
+    overflow: hidden;
+  }
+
+
+  .address_box{
+    height: auto;
+    width: 40%;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+
+  .contact_img{
+    height: 125px;
+    width: 100%;
+    border-radius: 25px 25px 0 0px;
+    background-image: url("../src/assets/images/contact.jpg");
+    background-size: 100% 125px;
+    background-repeat: no-repeat;
+  }
+
+  .message_box{
+    resize: none;
+  }
+
+  .versity_pic{
+    height: 250px;
+    width: auto;
+    margin: 3.5%;
+    border-radius: 15px;
+
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  @-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 700px;}
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 700px;}
+  }
+
+</style>
